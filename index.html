@@ -1,0 +1,444 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yash Jain - Frontend Developer</title>
+    <meta name="description" content="Frontend Developer Portfolio - Beautiful User Experiences">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="styles.css">
+      <script type="importmap">
+    {
+      "imports": {
+        "three": "https://unpkg.com/three@v0.158.0/build/three.module.js",
+        "three/addons/": "https://unpkg.com/three@v0.158.0/examples/jsm/"
+      }
+    }
+  </script>
+
+  <script type="module" src="avatar.js"></script>
+
+</head>
+
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loading-content">
+            <div class="loader"></div>
+            <p>Loading...</p>
+        </div>
+    </div>
+
+    <!-- Side Navigation -->
+    <nav id="side-nav">
+        <div class="nav-logo">
+            <span>YJ</span>
+        </div>
+        <ul class="nav-menu">
+            <li><a href="#home" data-section="home">Home</a></li>
+            <li><a href="#about" data-section="about">About</a></li>
+            <li><a href="#work" data-section="work">Work</a></li>
+            <li><a href="#contact" data-section="contact">Contact</a></li>
+        </ul>
+        <div class="social-links">
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/yash-jain-31a3242a8/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:yash@example.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Toggle -->
+    <div class="mobile-menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Home Section -->
+        <section id="home" class="section active">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="hero-name">Hi, my name is Yash .</h1>
+                        <p class="hero-tagline">I love creating beautiful user experiences.</p>
+                        <a href="#contact" class="cta-button">Get in touch</a>
+                        
+                        <!-- Coding Animation -->
+                        <div class="coding-animation">
+                            <div class="code-window">
+                                <div class="window-header">
+                                    <div class="window-buttons">
+                                        <span class="btn-close"></span>
+                                        <span class="btn-minimize"></span>
+                                        <span class="btn-maximize"></span>
+                                    </div>
+                                    <div class="window-title">main.cpp</div>
+                                </div>
+                                <div class="code-content">
+                                    <div class="code-line"><span class="keyword">#include</span> <span class="string">&lt;iostream&gt;</span></div>
+                                    <div class="code-line"><span class="keyword">using namespace</span> <span class="variable">std</span>;</div>
+                                    <div class="code-line"></div>
+                                    <div class="code-line"><span class="keyword">int</span> <span class="variable">main</span>() {</div>
+                                    <div class="code-line">  <span class="variable">cout</span> << <span class="string">"Hello World!"</span> << <span class="variable">endl</span>;</div>
+                                    <div class="code-line">  <span class="keyword">return</span> <span class="variable">0</span>;</div>
+                                    <div class="code-line">}</div>
+                                    <div class="cursor"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-visual">
+                        <!-- Developer Illustration -->
+                        <div class="developer-illustration">
+                            <div class="developer-character">
+                                <div class="dev-head">
+                                    <div class="dev-hair"></div>
+                                    <div class="dev-face">
+                                        <div class="dev-eyes">
+                                            <div class="eye left"></div>
+                                            <div class="eye right"></div>
+                                        </div>
+                                        <div class="dev-nose"></div>
+                                        <div class="dev-mouth"></div>
+                                    </div>
+                                </div>
+                                <div class="dev-neck"></div>
+                                <div class="dev-body">
+                                    <div class="dev-shirt"></div>
+                                    <div class="dev-arms">
+                                        <div class="arm left"></div>
+                                        <div class="arm right1"></div>
+                                        <!--<div class="arm right typing"></div> -->
+                                    </div>
+                                    <div class="dev-legs">
+                                        <div class="leg left">
+                                            <div class="foot"></div>
+                                        </div>
+                                        <div class="leg right">
+                                            <div class="foot"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="desk">
+                                <div class="desk-leg"></div>
+                                <div class="desk-leg"></div>
+                                <div class="desk-leg"></div>
+                                <div class="desk-leg"></div>
+                                <div class="laptop">
+                                    <div class="laptop-screen">
+                                        <div class="screen-glow"></div>
+                                        <div class="code-lines">
+                                            <div class="code-line-screen"><span class="cpp-keyword">#include</span> &lt;iostream&gt;</div>
+                                            <div class="code-line-screen"><span class="cpp-keyword">using namespace</span> std;</div>
+                                            <div class="code-line-screen"></div>
+                                            <div class="code-line-screen"><span class="cpp-keyword">int</span> <span class="cpp-function">main</span>() {</div>
+                                            <div class="code-line-screen">  cout &lt;&lt; <span class="cpp-string">"Hello World!"</span>;</div>
+                                            <div class="code-line-screen">  <span class="cpp-keyword">return</span> 0;</div>
+                                            <div class="code-line-screen">}<span class="screen-cursor"></span></div>
+                                        </div>
+                                    </div>
+                                    <div class="laptop-base"></div>
+                                    <!-- Keyboard positioned below the screen -->
+                                    <div class="keyboard">
+                                        <div class="keyboard-keys">
+                                            <div class="key"></div>
+                                            <div class="key"></div>
+                                            <div class="key"></div>
+                                            <div class="key"></div>
+                                            <div class="key"></div>
+                                            <div class="key"></div>
+                                            <div class="key"></div>
+                                            <div class="key"></div>
+                                            <div class="key"></div>
+                                            <div class="key"></div>
+                                            <div class="key"></div>
+                                            <div class="key"></div>
+                                            <div class="key"></div>
+                                            <div class="key"></div>
+                                            <div class="key"></div>
+                                            <div class="key"></div>
+                                            <div class="key"></div>
+                                            <div class="key"></div>
+                                            <div class="key"></div>
+                                            <div class="key"></div>
+                                            <div class="key"></div>
+                                            <div class="key"></div>
+                                            <div class="key"></div>
+                                            <div class="key"></div>
+                                            <div class="key"></div>
+                                            <div class="key"></div>
+                                            <div class="key"></div>
+                                            <div class="key"></div>
+                                            <div class="key"></div>
+                                            <div class="key"></div>
+                                            <div class="key"></div>
+                                            <div class="key"></div>
+                                            <div class="key"></div>
+                                            <div class="key"></div>
+                                            <div class="key"></div>
+                                            <div class="key"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="coffee-cup">
+                                    <div class="cup-body"></div>
+                                    <div class="cup-handle"></div>
+                                    <div class="coffee-steam">
+                                        <div class="steam"></div>
+                                        <div class="steam"></div>
+                                        <div class="steam"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Chair -->
+                            <div class="chair">
+                                <div class="chair-back"></div>
+                                <div class="chair-seat"></div>
+                                <div class="chair-legs">
+                                    <div class="chair-leg"></div>
+                                    <div class="chair-leg"></div>
+                                    <div class="chair-leg"></div>
+                                    <div class="chair-leg"></div>
+                                </div>
+                                <div class="chair-base"></div>
+                            </div>
+                        </div>
+                        
+                        <!-- Floating Tech Icons -->
+                        <div class="floating-tech">
+                            <div class="tech-icon html" title="HTML5">
+                                <i class="fab fa-html5"></i>
+                            </div>
+                            <div class="tech-icon css" title="CSS3">
+                                <i class="fab fa-css3-alt"></i>
+                            </div>
+                            <div class="tech-icon js" title="JavaScript">
+                                <i class="fab fa-js-square"></i>
+                            </div>
+                            <div class="tech-icon react" title="React">
+                                <i class="fab fa-react"></i>
+                            </div>
+                            <div class="tech-icon node" title="Node.js">
+                                <i class="fab fa-node-js"></i>
+                            </div>
+                            <div class="tech-icon git" title="Git">
+                                <i class="fab fa-git-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-info">
+                        <div class="info-grid">
+                            <div class="info-item">
+                                <span class="info-label">Name:</span>
+                                <span class="info-value">Yash Jain</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Age:</span>
+                                <span class="info-value">21</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">From:</span>
+                                <span class="info-value">India</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Skills:</span>
+                                <span class="info-value">Frontend Development</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">About Me</h2>
+                </div>
+                <div class="about-grid">
+                    <!-- 3D Avatar takes center stage -->
+                    <div class="about-avatar">
+                        <div class="avatar-3d">
+                            <div id="avatar-container">
+                                <div id="avatar-loading">LOADING...</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Content alongside -->
+                    <div class="about-content">
+                        <h3>I'm a passionate frontend developer</h3>
+                        <p>With expertise in modern web technologies, I love creating beautiful, interactive experiences that bring ideas to life.</p>
+                        
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <i class="fab fa-js-square"></i>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-react"></i>
+                                <span>React</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-node-js"></i>
+                                <span>Node.js</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-css3-alt"></i>
+                                <span>CSS3</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Work Section -->
+        <section id="work" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h5 class="section-subtitle">Portfolio</h5>
+                    <h2 class="section-title">
+                        Some things<br>
+                        I've worked on
+                    </h2>
+                </div>
+                <div class="projects-grid">
+                    <div class="project-item">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop" alt="E-commerce Dashboard">
+                            <div class="project-overlay">
+                                <a href="https://doggy-stickers0074.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i> 
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>E-commerce Dashboard</h3>
+                            <p>If you love dogs you should visit us. </p>
+                            <div class="project-tags">
+                                <span>React18</span>
+                                <span>nextjs</span>
+                                <span>javascript</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <div class="project-image">
+                            <img src="mess-management-app.png" alt="Mess Management System" width="600" height="400">
+                            <div class="project-overlay">
+                                <a href="https://yashjaingit0074-mess-management1-app-streamlit-nwbqv4.streamlit.app/" target="_blank" rel="noopener noreferrer" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i> 
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Mess Management System</h3>
+                            <p>Interactive mess management application with real-time updates</p>
+                            <div class="project-tags">
+                                <span>Streamlit</span>
+                                <span>Python</span>
+                                <span>Data Management</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=600&h=400&fit=crop" alt="Crowdcraft">
+                            <div class="project-overlay">
+                                <a href="https://crowdcraft-analysis-6tqhdmha6lq96b83o2fqvw.streamlit.app/" target="_blank" rel="noopener noreferrer" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i> 
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Crowdcraft</h3>
+                            <p>Full-stack social platform with real-time messaging</p>
+                            <div class="project-tags">
+                                <span>Streamlit</span>
+                                <span>Python</span>
+                                <span>Data Analysis</span>
+                            </div>
+                        </div>
+                    </div>
+                   <!-- <div class="project-item">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1600132806370-bf17e65e942f?w=600&h=400&fit=crop" alt="Weather App">
+                        </div>
+                       <div class="project-info">
+                            <h3>Weather Forecast App</h3>
+                            <p>Beautiful weather app with location-based forecasts</p>
+                            <div class="project-tags">
+                                <span>JavaScript</span>
+                                <span>API Integration</span>
+                                <span>CSS3</span>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h5 class="section-subtitle">Say hello 👋</h5>
+                    <h2 class="section-title">Contact me</h2>
+                </div>
+                <div class="contact-content">
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Name:</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" rows="4" required></textarea>
+                        </div>
+                        <div class="form-actions">
+                            <div class="contact-social">
+                                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                                <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                                <a href="mailto:yash@example.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                            </div>
+                            <button type="submit" class="submit-btn">Submit</button>
+                        </div>
+                    </form>
+                </div>
+                <footer class="footer">
+                    <p>&copy; Yash Jain</p>
+                    <div class="footer-links">
+                        <a href="#">Legal Notice</a>
+                        <a href="#">Privacy Policy</a>
+                    </div>
+                </footer>
+            </div>
+        </section>
+    </main>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
