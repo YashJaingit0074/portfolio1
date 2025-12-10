@@ -77,12 +77,12 @@ async function initAvatar() {
 
   // Load model
   try {
-    console.log('Loading 3D model from /46936_autosave.glb');
+    console.log('Loading 3D model from /public/46936_autosave.glb');
     const loader = new GLTFLoader();
     
     const gltf = await new Promise((resolve, reject) => {
       loader.load(
-        '/46936_autosave.glb',
+        '/public/46936_autosave.glb',
         resolve,
         (xhr) => {
           const progress = Math.round((xhr.loaded / xhr.total) * 100);
@@ -163,8 +163,14 @@ async function initAvatar() {
 }
 
 // Initialize when DOM is ready
+console.log('Avatar.js loaded, document.readyState:', document.readyState);
 if (document.readyState === 'loading') {
-  document.addEventListener('DOMContentLoaded', initAvatar);
+  console.log('Waiting for DOMContentLoaded...');
+  document.addEventListener('DOMContentLoaded', () => {
+    console.log('DOMContentLoaded fired, initializing avatar');
+    initAvatar();
+  });
 } else {
+  console.log('DOM already loaded, initializing avatar immediately');
   initAvatar();
 }
