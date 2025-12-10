@@ -12,6 +12,7 @@ const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
 const sideNav = document.getElementById('side-nav');
 let currentSection = 0;
 let isScrolling = false;
+let particles = []; // Initialize empty particles array to prevent errors
 
 // ===============================================
 // INITIALIZATION
@@ -1134,14 +1135,14 @@ if (document.readyState === 'loading') {
 document.addEventListener('visibilitychange', function() {
     if (document.hidden) {
         // Pause heavy animations
-        particles.forEach(particle => {
-            particle.userData.paused = true;
-        });
+        // particles.forEach(particle => {
+        //     particle.userData.paused = true;
+        // });
     } else {
         // Resume animations
-        particles.forEach(particle => {
-            particle.userData.paused = false;
-        });
+        // particles.forEach(particle => {
+        //     particle.userData.paused = false;
+        // });
     }
 });
 
