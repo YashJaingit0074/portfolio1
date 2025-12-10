@@ -17,7 +17,7 @@ function loadModel() {
   console.log('Loading 3D model...');
   
   const loader = new GLTFLoader();
-  loader.load('public/46936_autosave.glb',
+  loader.load('/public/46936_autosave.glb',
     (gltf) => {
       console.log('Model loaded successfully:', gltf);
       console.log('Animations available:', gltf.animations?.map(clip => clip.name) || 'None');
