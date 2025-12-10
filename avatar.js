@@ -5,22 +5,23 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 let scene, camera, renderer, controls;
 
 async function initAvatar() {
+  console.log('=== AVATAR INIT START ===');
   const container = document.getElementById('avatar-container');
   const loadingElement = document.getElementById('avatar-loading');
   
-  console.log('Container:', container);
-  console.log('Container size:', container?.clientWidth, 'x', container?.clientHeight);
-  
   if (!container) {
-    console.error('Avatar container not found!');
+    console.error('❌ Avatar container not found!');
     return;
   }
-
-  // Ensure container has size
+  
+  console.log('✅ Container found');
+  console.log('Container size:', container.clientWidth, 'x', container.clientHeight);
+  
+  // Wait for container to have size
   if (container.clientWidth === 0 || container.clientHeight === 0) {
-    console.warn('Container has no size, setting defaults');
-    container.style.width = '100%';
-    container.style.height = '100%';
+    console.warn('⏳ Container has no size, waiting...');
+    await new Promise(resolve => setTimeout(resolve, 100));
+    console.log('New container size:', container.clientWidth, 'x', container.clientHeight);
   }
 
   // Setup scene
