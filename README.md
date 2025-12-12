@@ -9,7 +9,7 @@ A modern, interactive portfolio website featuring a 3D avatar, smooth animations
 
 ## 🚀 Live Demo
 
-Visit the live portfolio: [https://portfolio001.vercel.app](https://portfolio001.vercel.app)
+Visit the live portfolio: 
 
 ## ✨ Features
 
@@ -197,7 +197,7 @@ Add project cards in the Work section of `index.html`:
 
 - 💼 LinkedIn: [linkedin.com/in/yash-jain-31a3242a8](https://www.linkedin.com/in/yash-jain-31a3242a8/)
 - 📧 Email: jainyash0074@gmail.com
-- 🌐 Portfolio: [portfolio001.vercel.app](https://portfolio001.vercel.app)
+- 🌐 Portfolio: 
 - 🐱 GitHub: [github.com/YashJaingit0074](https://github.com/YashJaingit0074)
 
 ## 🙏 Acknowledgments
