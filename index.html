@@ -20,8 +20,17 @@
     
     <link rel="stylesheet" href="styles.css">
 
-    <!-- Avatar 3D module - using direct CDN imports -->
-    <script type="module" src="avatar.js?v=17"></script>
+    <!-- Three.js -->
+    <script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>
+    <script type="importmap">
+    {
+      "imports": {
+        "three": "https://unpkg.com/three@0.158.0/build/three.module.js",
+        "three/addons/": "https://unpkg.com/three@0.158.0/examples/jsm/"
+      }
+    }
+    </script>
+    <script type="module" src="avatar-final.js"></script>
 </head>
 
 <body>
@@ -48,7 +57,7 @@
             <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
             <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
             <a href="https://www.linkedin.com/in/yash-jain-31a3242a8/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-            <a href="mailto:yash@example.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            <a href="mailto:jainyash0074@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
         </div>
     </nav>
 
@@ -433,6 +442,6 @@
     </main>
 
     <!-- JavaScript -->
-    <script src="script.js?v=15"></script>
+    <script src="script.js?v=16"></script>
 </body>
 </html>
